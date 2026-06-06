@@ -5,5 +5,11 @@ import ui
 pub struct Label {
 	ui.Label
 pub:
-	id			string
+	s_id		string
+}
+
+fn label(id string) Label {
+	return Label {
+		s_id: id
+	}
 }

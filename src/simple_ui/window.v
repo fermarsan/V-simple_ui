@@ -7,5 +7,11 @@ pub type Component = TextBox | Label
 pub struct Window {
 	ui.Window
 pub:
-	layout		[]Component
+	s_layout	[]Component
+}
+
+fn window(layout []Component) Window {
+	return Window {
+		s_layout: layout
+	}
 }

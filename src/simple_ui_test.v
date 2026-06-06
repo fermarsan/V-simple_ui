@@ -2,8 +2,8 @@ import simple_ui as sui
 
 fn test_layout() {
 	mut layout := []sui.Component{}
-	layout = [ sui.Label{id: 'c1'}, sui.TextBox{id: 'c2'} ]
+	layout = [ sui.label('c1'), sui.text_box('c2') ]
 
-	window := sui.Window{ layout: layout }
+	window := sui.window(layout)
 }
-
+ 
